@@ -1,13 +1,62 @@
 body {
     font-size: 20px;
+    text-align: center;
+    
 }
 
-.btn {
-    width: 70px;
+#calc {
+    margin-top: 50px;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(66, 66, 66);
+    border-radius: 10px;
+}
+
+#display {
+    background-color: rgb(44, 44, 44);
+    height: 20px;
+    padding: 10px 0px 10px 0px;
+    margin-top: 0px;
+    color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
+}
+
+button {
+
+    width: 80%;
     font-size: 20px;
-    margin-top: 5px;
+    margin-left: 7px;
+    margin-bottom: 7px;
+    border: transparent;
+    color: white;
+    background-color: rgb(112, 112, 112);
+    border-radius: 10px;
+    outline: none;
+
+
 }
 
-#allButtons {
-    display: grid;
+button:hover {
+    background-color:  rgb(163, 163, 163);
 }
+
+button:active {
+    transform: translateY(2px);
+}
+
+#inputButtons {
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+    margin-bottom: 10px;
+
+    
+}
+ #para {
+     margin-top: 30px;
+ }

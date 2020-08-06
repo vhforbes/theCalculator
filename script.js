@@ -48,7 +48,7 @@ let equalPressed = false
 
 // Numbers button update Display
 
-let allNumbersParent = document.querySelector('#numbers')
+let allNumbersParent = document.querySelector('#inputButtons')
 let numbersBtn = allNumbersParent.querySelectorAll('.btn')
 
 numbersBtn.forEach((button) => { 
@@ -70,8 +70,8 @@ numbersBtn.forEach((button) => {
 
 // Operations Buttons return a result
 
-let allOperationBtn = document.querySelector('#operations')
-let operationBtn = allOperationBtn.querySelectorAll('.btn')
+let allOperationBtn = document.querySelector('#inputButtons')
+let operationBtn = allOperationBtn.querySelectorAll('.btn-o')
 
 operationBtn.forEach((button) => {
     button.addEventListener('click', () => {
@@ -135,6 +135,14 @@ let equalBtn = document.querySelector('#equal')
         
     })
 
+let clearBtn = document.querySelector('#clear')
+
+clearBtn.addEventListener('click', () => {
+    firstValue = 0
+    secondValue = 0
+    totalValue = 0
+    updateDisplay(displayValue)
+})
 
 
 
