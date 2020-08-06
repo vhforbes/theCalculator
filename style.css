@@ -1,0 +1,13 @@
+body {
+    font-size: 20px;
+}
+
+.btn {
+    width: 70px;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+#allButtons {
+    display: grid;
+}
